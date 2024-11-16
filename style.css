@@ -1,0 +1,97 @@
+/* Estilo Básico */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #000;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.banner {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+section {
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 900px;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Galeria */
+.grid-galeria, .grid-equipe {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.grid-galeria img, .grid-equipe img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.membro p {
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Formulários */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form button {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Botão WhatsApp */
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #25D366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.whatsapp:hover {
+    background: #1da955;
+}
