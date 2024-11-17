@@ -123,6 +123,47 @@ button {
     transition: background-color 0.3s;
 }
 
+/* Estilo padrão para os botões */
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    background-color: #0d6efd;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover: animação e mudanças de cor */
+.btn:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Botões com cor secundária (caso precise) */
+.btn-secondary {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.btn-secondary:hover {
+    background-color: #e0a800;
+    border-color: #e0a800;
+}
+
+/* Centralizar botões, caso necessário */
+.btn-container {
+    text-align: center;
+    margin: 20px 0;
+}
 button:hover {
     background-color: #0056b3;
 }
