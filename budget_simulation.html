@@ -1,1 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Orçamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Simulação de Orçamento</h1>
+    </header>
+    <main>
+        <form action="calculate_budget.php" method="POST">
+            <label for="car-model">Modelo do Veículo:</label>
+            <input type="text" id="car-model" name="car_model" required>
 
+            <label for="problem-description">Descrição do Problema:</label>
+            <textarea id="problem-description" name="problem_description" rows="4" required></textarea>
+
+            <label for="service-type">Tipo de Serviço:</label>
+            <select id="service-type" name="service_type" required>
+                <option value="revisao">Revisão</option>
+                <option value="troca-oleo">Troca de Óleo</option>
+                <option value="alinhamento">Alinhamento</option>
+                <option value="pintura">Pintura</option>
+            </select>
+
+            <button type="submit">Simular</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Antunes Motorsport</p>
+    </footer>
+</body>
+</html>
