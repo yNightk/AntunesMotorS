@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento Online</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Agendamento Online</h1>
+        <p>Agende um horário para cuidar do seu veículo!</p>
+    </header>
+    <main>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="date">Data desejada:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Horário desejado:</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="service">Serviço:</label>
+            <select id="service" name="service" required>
+                <option value="revisao">Revisão</option>
+                <option value="troca-oleo">Troca de Óleo</option>
+                <option value="alinhamento">Alinhamento</option>
+                <option value="outro">Outro</option>
+            </select>
+
+            <button type="submit">Agendar</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2024 Antunes Motorsport</p>
+    </footer>
+</body>
+</html>
