@@ -113,6 +113,43 @@ form button {
     transition: background 0.3s, transform 0.2s;
 }
 
+/* Animação de entrada (fade-in) */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animação de zoom no hover */
+@keyframes zoom {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
+/* Aplicando animações na galeria e equipe */
+.grid-galeria img, .grid-equipe img {
+    animation: fadeIn 1s ease-in-out;
+    transition: transform 0.3s ease;
+}
+
+.grid-galeria img:hover, .grid-equipe img:hover {
+    animation: zoom 0.3s ease-in-out forwards;
+}
+
+/* Animação para membros da equipe */
+.grid-equipe .membro {
+    animation: fadeIn 1s ease-in-out;
+    transition: transform 0.3s ease;
+}
 #Dicas .btn-tips:hover {
     background: #003366;
     transform: scale(1.05);
