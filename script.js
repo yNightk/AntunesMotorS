@@ -30,7 +30,7 @@ document.getElementById("form-contato").addEventListener("submit", function (eve
     };
 
     emailjs
-        .send("service_vl4wbua", "seu_template_id", templateParams)
+        .send("service_vl4wbua", "template_uihiwbr", templateParams)
         .then(
             () => alert("Mensagem enviada com sucesso!"),
             (error) => alert("Erro ao enviar mensagem: " + error.text)
