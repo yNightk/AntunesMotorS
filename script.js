@@ -12,7 +12,7 @@ document.getElementById("form-orcamento").addEventListener("submit", function (e
     };
 
     emailjs
-        .send("seu_service_id", "seu_template_id", templateParams)
+        .send("service_yrw10af", "template_5ktnd56", templateParams)
         .then(
             () => alert("Orçamento enviado com sucesso!"),
             (error) => alert("Erro ao enviar orçamento: " + error.text)
@@ -30,7 +30,7 @@ document.getElementById("form-contato").addEventListener("submit", function (eve
     };
 
     emailjs
-        .send("seu_service_id", "seu_template_id", templateParams)
+        .send("service_vl4wbua", "seu_template_id", templateParams)
         .then(
             () => alert("Mensagem enviada com sucesso!"),
             (error) => alert("Erro ao enviar mensagem: " + error.text)
