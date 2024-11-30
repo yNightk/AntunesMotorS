@@ -1,5 +1,5 @@
 // Configuração do EmailJS
-emailjs.init("seu_user_id"); // Substitua pelo seu user_id
+emailjs.init("o2p3d6E7PvKZ4UJde"); // Substitua pelo seu user_id
 
 // Função para enviar orçamento
 document.getElementById("form-orcamento").addEventListener("submit", function (event) {
